@@ -1,6 +1,15 @@
-# main.py
+"""
+Akeno Downloader v1.2
+Entry point for the desktop application.
+"""
+
 from gui import YouTubeDownloader
 
-if __name__ == "__main__":
+
+def main() -> None:
     app = YouTubeDownloader()
     app.mainloop()
+
+
+if __name__ == "__main__":
+    main()
