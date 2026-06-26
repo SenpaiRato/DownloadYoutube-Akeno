@@ -1,13 +1,11 @@
 <h1 align="center">🎵 AkenoDownloader</h1>
 
 <p align="center">
-  <img width="819" height="745" alt="image" src="https://github.com/user-attachments/assets/da19d6ff-d4c4-4ed7-9770-9db11c70fb36" />
-</p>
-
+  <img width="819" height="745" alt="Akeno Downloader v2.0 Screenshot" src="https://github.com/user-attachments/assets/da19d6ff-d4c4-4ed7-9770-9db11c70fb36" />
 </p>
 
 <p align="center">
-  <b>Clean, fast, and cross-platform YouTube downloader & converter — built for users who value simplicity and control.</b>
+  <b>Clean, fast, and modern YouTube downloader — built for users who value simplicity, speed, and control.</b>
 </p>
 
 <p align="center">
@@ -20,92 +18,179 @@
   <a href="https://github.com/SenpaiRato/AkenoDownloader/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/SenpaiRato/AkenoDownloader?color=00c853&style=for-the-badge" alt="License">
   </a>
+  <a href="https://github.com/SenpaiRato/AkenoDownloader/releases">
+    <img src="https://img.shields.io/badge/yt--dlp-2026-blueviolet?style=for-the-badge" alt="yt-dlp">
+  </a>
 </p>
 
----
+<hr>
 
-## ✨ Overview
+<h2>✨ Overview</h2>
 
-**AkenoDownloader** is a lightweight, privacy-respecting downloader designed to fetch and convert YouTube content with ease.  
-It focuses on speed, simplicity, and full transparency — all open source, no telemetry, no ads.
+<p>
+  <b>AkenoDownloader</b> is a lightweight, privacy-respecting YouTube downloader built with <b>PySide6</b> and powered by the latest <b>yt-dlp 2026</b> engine.
+  It focuses on speed, simplicity, and full transparency — open source, no telemetry, no ads.
+</p>
 
----
+<hr>
 
-## 🚀 Features
+<h2>🚀 Features</h2>
 
-| Feature | Description |
-|----------|-------------|
-| 🎧 **Video Download** | Fetch videos or extract audio from YouTube. |
-| 🧠 **Smart Parsing** | Automatically detects available resolutions and bitrates. |
-| ⚡ **Fast Performance** | Minimal resource usage and optimized I/O. |
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🎬 <b>High-Res Downloads</b></td>
+      <td>Support for 1080p, 2K, 4K and higher (depending on source availability).</td>
+    </tr>
+    <tr>
+      <td>🎧 <b>Audio Extraction</b></td>
+      <td>Download videos or extract high-quality audio.</td>
+    </tr>
+    <tr>
+      <td>📁 <b>Custom Save Path</b></td>
+      <td>Choose exactly where your videos are saved, directly from the UI.</td>
+    </tr>
+    <tr>
+      <td>🧠 <b>Smart Parsing</b></td>
+      <td>Automatically detects available resolutions and formats.</td>
+    </tr>
+    <tr>
+      <td>🔐 <b>Cookie Authentication</b></td>
+      <td>Full support for Netscape cookie exports to bypass bot checks.</td>
+    </tr>
+    <tr>
+      <td>🌐 <b>Dynamic Proxy</b></td>
+      <td>Auto-detects Windows VPN / system proxy with hotfixed routing.</td>
+    </tr>
+    <tr>
+      <td>⚡ <b>Optimized FFmpeg</b></td>
+      <td>Faster downloads and merges with improved FFmpeg integration.</td>
+    </tr>
+    <tr>
+      <td>🎨 <b>Modern PySide6 UI</b></td>
+      <td>Lighter, cleaner, and more professional interface.</td>
+    </tr>
+  </tbody>
+</table>
 
----
+<hr>
 
-## 🧩 Requirements & Step-by-step setup
+<h2>🧩 Requirements &amp; Step-by-step Setup</h2>
 
-> ⚠️ **Note:** > ⚠️ **Note:** AkenoDownloader does not require the user to install Python or other runtime programs (unless you run it from source, which requires the Libraries / Dependencies section and only the ffmpeg.exe file along with the repository code for proper execution).
+<blockquote>
+  ⚠️ <b>Note:</b> AkenoDownloader does <b>not</b> require the user to install Python or any runtime (unless you run it from source). For the release version, you only need <code>ffmpeg.exe</code> alongside the executable.
+</blockquote>
 
+<h3>✳️ Step-by-step Setup</h3>
 
+<ol>
+  <li>Export your cookies as <b>Netscape</b> format using a reliable extension like <a href="https://cookie-editor.com">Cookie-Editor</a> (works on all browsers).</li>
+  <li>Save the extracted data into a <code>cookies.txt</code> file.</li>
+  <li>Place <code>cookies.txt</code> next to <code>AkenoDownloader.exe</code>.</li>
+  <li>Run the program — you're ready to go! 🎉</li>
+</ol>
 
-**✳️ Step-by-step setup**
-1. Export your cookies as Netscape using a reliable extension like "https://cookie-editor.com" (🌍All browsers work).  
-2. Save the extracted data into a `cookies.txt` file.  
-3. The program is ready to run.
+<blockquote>
+  🛑 <b>Important:</b> If the program fails to download, your cookies have likely expired. Re-export them from scratch and replace the contents of <code>cookies.txt</code>.<br>
+  ⚠️ <b>Never share your <code>cookies.txt</code> file with anyone — it contains your active login session!</b>
+</blockquote>
 
->🛑Important: If the program does not work, the problem is that the cookies have expired. Extract the cookies from scratch and replace the information in the cookies.txt file -- Don't give your cookies to anyone!!
----
+<hr>
 
-## 🧰 Libraries / Dependencies (It is not needed for those who downloaded the release version)
+<h2>📂 Release Folder Layout</h2>
 
-AkenoDownloader uses the following Python libraries and modules:
+<pre><code>AkenoDownloader.exe
+ffmpeg.exe
+cookies.txt
+config.json          ← auto-generated (stores your preferences)
+</code></pre>
 
-| Library | Purpose |
-|---------|---------|
-| `customtkinter` | Modern styled GUI components |
-| `tkinter` | Standard Python GUI framework |
-| `messagebox` (from `tkinter`) | Display popup dialogs |
-| `yt_dlp` | Download and extract videos/audio from YouTube |
-| `PIL` (Python Imaging Library) | Handling images, logos, and icons |
-| `os` | File system operations |
-| `re` | Regular expressions for text parsing |
-| `threading` | Multi-threading support |
-| `sys` | System-specific parameters and functions |
-| `json` | Parse and write JSON configuration files |
-| `typing` | Type hinting for better code clarity |
+<hr>
 
+<h2>🧰 Libraries / Dependencies (Only for Source Users)</h2>
 
-## 🧠 FAQ
+<blockquote>
+  ℹ️ Users who downloaded the release version do <b>not</b> need to install anything.
+</blockquote>
 
-**❓ Question:** Is AkenoDownloader safe to use?  
-**✅ Answer:** Yes. AkenoDownloader is open source and does not contain malware or ads. Some antivirus programs may flag it because of the way it accesses videos and system resources, but these are false positives.
+<p>AkenoDownloader v2.0 uses the following Python libraries:</p>
 
----
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>PySide6</code></td>
+      <td>Modern, professional GUI framework</td>
+    </tr>
+    <tr>
+      <td><code>yt_dlp</code> (2026)</td>
+      <td>Download and extract videos/audio from YouTube</td>
+    </tr>
+    <tr>
+      <td><code>Pillow</code> (PIL)</td>
+      <td>Handle images, logos, and icons</td>
+    </tr>
+    <tr>
+      <td><code>requests</code></td>
+      <td>Network requests and proxy handling</td>
+    </tr>
+    <tr>
+      <td><code>json</code></td>
+      <td>Parse and write configuration files</td>
+    </tr>
+    <tr>
+      <td><code>threading</code></td>
+      <td>Multi-threading for smooth UI performance</td>
+    </tr>
+    <tr>
+      <td><code>os</code> / <code>sys</code></td>
+      <td>File system and system operations</td>
+    </tr>
+    <tr>
+      <td><code>re</code></td>
+      <td>Regular expressions for text parsing</td>
+    </tr>
+  </tbody>
+</table>
 
-**❓ Question:** Do I need to install Python or any other software?  
-**✅ Answer:** No. If you use the published executable, it will run independently.
+<hr>
 
----
+<h2>🧠 FAQ</h2>
 
-**❓ Question:** Why do I need cookies.txt?  
-**✅ Answer:** Cookies allow the program to bypass Are you a robot restrictions.
+<p><b>❓ Is AkenoDownloader safe to use?</b><br>
+✅ Yes. It is fully open source and contains no malware or ads. Some antivirus programs may flag it due to how it accesses videos — these are false positives.</p>
 
----
+<p><b>❓ Do I need to install Python or any other software?</b><br>
+✅ No. The released <code>.exe</code> runs independently. Just make sure <code>ffmpeg.exe</code> and <code>cookies.txt</code> are next to it.</p>
 
-**❓ Question:** Which platforms are supported?  
-**✅ Answer:** Windows 10 and up
+<p><b>❓ Why do I need <code>cookies.txt</code>?</b><br>
+✅ Cookies allow the program to bypass YouTube's "Are you a robot?" checks and access higher-quality formats.</p>
 
----
+<p><b>❓ Which platforms are supported?</b><br>
+✅ Windows 10 and later.</p>
 
-**❓ Question:** What video formats can I download?  
-**✅ Answer:** MP4 supported by default.
+<p><b>❓ What video formats can I download?</b><br>
+✅ MP4 is supported by default, with resolutions up to 4K/8K when available.</p>
 
----
+<p><b>❓ My download is slow or failing — what should I do?</b><br>
+✅ The dynamic proxy feature is enabled by default and will automatically use your system VPN/proxy. If issues persist, refresh your cookies.</p>
 
-**❓ Question:** My download is slow or failing - what should I do?  
-**✅ Answer:** Proxy feature is enabled for you. It will use automatically.
+<p><b>❓ How can I contribute or report bugs?</b><br>
+✅ You can submit issues on GitHub. (Please note: updates may be slow as this is a personal project.)</p>
 
----
+<hr>
 
-**❓ Question:** How can I contribute or report bugs?  
-**✅ Answer:** You can submit issues on GitHub (Updates are slow because it's not my main job).
-
+<p align="center">
+  <b>Built with ❤️ by <a href="https://github.com/SenpaiRato">SenpaiRato</a></b>
+</p>
