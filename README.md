@@ -106,7 +106,8 @@
 
 <pre><code>AkenoDownloader.exe
 ffmpeg.exe
-cookies.txt
+cookies.txt          ← auto-generated
+.cookies_ytdlp.txt   ← auto-generated
 config.json          ← auto-generated (stores your preferences)
 </code></pre>
 
