@@ -1,8 +1,7 @@
 <h1 align="center">🎵 AkenoDownloader</h1>
 
 <p align="center">
-  <img width="686" height="678" alt="image" src=<img width="819" height="745" alt="image" src="https://github.com/user-attachments/assets/da19d6ff-d4c4-4ed7-9770-9db11c70fb36" />
- />
+  <img width="819" height="745" alt="image" src="https://github.com/user-attachments/assets/da19d6ff-d4c4-4ed7-9770-9db11c70fb36" />
 </p>
 
 </p>
