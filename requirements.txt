@@ -1,5 +1,3 @@
-# Akeno Downloader v1.2 - runtime dependencies only (PyInstaller is for building)
-customtkinter>=5.2.0
-yt-dlp>=2025.1.0
-yt-dlp-ejs>=0.8.0
-Pillow>=10.0.0
+# Akeno Downloader v2 - runtime dependencies only (PyInstaller is for building)
+PySide6
+yt_dlp
