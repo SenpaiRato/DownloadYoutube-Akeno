@@ -10,39 +10,33 @@ import os
 # SECTION: Branding & Assets
 # =============================================================================
 APP_NAME = "Akeno Downloader"
-APP_VERSION = "1.2"
-BUILD_LABEL = "SenpaiRato_V1.2"
+APP_VERSION = "2.0"
+BUILD_LABEL = "SenpaiRato_V2.0"
 COFFEE_URL = "https://www.coffeebede.com/senpairato"
 
-# Bundled inside the exe (Res/). User files (ffmpeg, cookies) stay next to the exe.
 LOGO_PATH = os.path.join(BUNDLE_DIR, "Res", "logo.png")
 ICON_PATH = os.path.join(BUNDLE_DIR, "Res", "icon.ico")
 
 # =============================================================================
 # SECTION: Window Layout
 # =============================================================================
-WINDOW_TITLE = f"🎥 {APP_NAME}"
-WINDOW_SIZE = "700x650"
-FONT_FAMILY = "Segoe UI"
+WINDOW_TITLE = f"{APP_NAME}"
+WINDOW_MIN_WIDTH = 900
+WINDOW_MIN_HEIGHT = 700
 
 # =============================================================================
 # SECTION: Download Quality Options
 # =============================================================================
-AVAILABLE_QUALITIES = (1080, 720, 480)
-
-QUALITY_COLORS = {
-    1080: "#1e88e5",
-    720: "#4caf50",
-    480: "#f44336",
+AVAILABLE_QUALITIES = (2160, 1080, 720, 480)
+QUALITY_LABELS = {
+    2160: "4K (2160p)",
+    1080: "Full HD (1080p)",
+    720: "HD (720p)",
+    480: "SD (480p)",
 }
-
-# =============================================================================
-# SECTION: UI Theme Colors
-# =============================================================================
-COLOR_READY = "green"
-COLOR_BUSY = "yellow"
-COLOR_ERROR = "red"
-COLOR_CANCEL = "orange"
-COLOR_PROGRESS = "#32CD32"
-COLOR_COFFEE = "#FFA500"
-COLOR_COFFEE_HOVER = "#FF8C00"
+QUALITY_COLORS = {
+    2160: "#8b5cf6",
+    1080: "#c97832",
+    720: "#5a9e6f",
+    480: "#8b7355",
+}

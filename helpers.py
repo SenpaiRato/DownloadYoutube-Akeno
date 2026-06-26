@@ -7,8 +7,6 @@ import re
 from typing import List, Union
 
 from config_manager import COOKIE_FILE_PATH, FFMPEG_PATH
-from constants import ICON_PATH, LOGO_PATH
-from cookies import is_cookie_file_usable
 
 
 # =============================================================================
@@ -18,28 +16,11 @@ def check_dependencies() -> List[str]:
     """Check for required files before the GUI starts."""
     errors = []
 
-    if not os.path.exists(COOKIE_FILE_PATH):
-        errors.append(
-            f"Cookie file not found: {COOKIE_FILE_PATH}\n"
-            "Please export YouTube cookies to cookies.txt next to the program."
-        )
-    elif not is_cookie_file_usable(COOKIE_FILE_PATH):
-        errors.append(
-            f"Cookie file looks invalid or incomplete: {COOKIE_FILE_PATH}\n"
-            "Re-export YouTube cookies from your browser while logged in."
-        )
-
     if not os.path.exists(FFMPEG_PATH):
         errors.append(
             f"FFmpeg not found: {FFMPEG_PATH}\n"
             "Please place ffmpeg.exe next to the program."
         )
-
-    if not os.path.exists(LOGO_PATH):
-        errors.append(f"Logo not found: {LOGO_PATH}\nPlease place logo.png in the Res folder.")
-
-    if not os.path.exists(ICON_PATH):
-        errors.append(f"Icon not found: {ICON_PATH}\nPlease place icon.ico in the Res folder.")
 
     return errors
 
