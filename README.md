@@ -91,9 +91,8 @@
 
 <ol>
   <li>Export your cookies as <b>Netscape</b> format using a reliable extension like <a href="https://cookie-editor.com">Cookie-Editor</a> (works on all browsers).</li>
-  <li>Save the extracted data into a <code>cookies.txt</code> file.</li>
-  <li>Place <code>cookies.txt</code> next to <code>AkenoDownloader.exe</code>.</li>
-  <li>Run the program — you're ready to go! 🎉</li>
+  <li>Go into AKENO and Click to the Cookies section, paste it - save.</li>
+  <li>you're ready to go! 🎉</li>
 </ol>
 
 <blockquote>
