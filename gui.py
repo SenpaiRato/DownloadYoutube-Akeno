@@ -346,8 +346,6 @@ class SettingsWidget(QWidget):
             f"Name: {APP_NAME}",
             f"Version: {APP_VERSION}",
             f"Build: {BUILD_LABEL}",
-            f"Cookies: {COOKIE_FILE_PATH}",
-            f"FFmpeg: {os.path.join(os.path.dirname(COOKIE_FILE_PATH), 'ffmpeg.exe')}",
             f"Proxy: {get_system_proxy() or 'None (direct)'}",
         ]
         for item in info_items:
